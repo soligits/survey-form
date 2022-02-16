@@ -4,6 +4,8 @@ body {
   font-family: 'Space Mono', sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  line-height: 2rem;
+  color: white;
   background-image: url("../img/background2.jpg") ;
   background-repeat: no-repeat;
   background-color: #ff7600;
@@ -12,28 +14,90 @@ body {
 }
 
 header {
-  margin: 40px auto;
+  margin: 3rem auto 0 auto;
   display: block;
-  width: 800px;
+  width: 700px;
   height: auto;
   max-width: 100%;
-  border-radius: 2%;
   padding: 8px 0;
   background-color: #703400;
   opacity: 0.90;
-  color: white;
   text-align: center;
+  border-radius: 5px;
 }
 
 main {
   margin: 0 auto;
   display: block;
-  width: 800px;
+  width: 700px;
   height: auto;
   min-height: 800px;
   max-width: 100%;
-  border-radius: 2%;
-  padding: 8px 0;
   background-color: #703400;
   opacity: 0.90;
+  border-radius: 5px;
+}
+
+.survey-form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto 0 auto;
+  padding: 1rem 3rem;
+}
+
+.survey-item {
+  margin: 1rem auto 1rem auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hint {
+  font-size: 0.8rem;
+}
+
+label {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+input, select, textarea{
+  display: flex;
+  margin: 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: .75rem 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.radio-label input{
+  margin-right: 1rem;
+
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  color: inherit;
+  border-radius: 5px;
+  background-color: orange;
+  padding: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .survey-form {
+    padding: 1rem 1rem;
+  }
+  main, header {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

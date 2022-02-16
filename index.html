@@ -11,7 +11,72 @@
         <p id="description" class="description">Thanks for your participation in the survey!</p>
     </header>
     <main>
-
+      <form class="survey-form" id="survey-form" action="index.html" method="post">
+          <div class="survey-item">
+            <label for="name" id="name-label">Name</label>
+            <input class="field" type="text" required name="name" id="name" value="" placeholder="Enter your name">
+          </div>
+          <div class="survey-item">
+            <label for="email" id="email-label">Email</label>
+            <input class="field" type="email" required name="email" id="email" value="" placeholder="Enter your email">
+          </div>
+          <div class="survey-item">
+            <label for="number" id="number-label">Age</label>
+            <input class="field" min="0" max="100" type="number" name="number" id="number" value="" placeholder="Enter your age">
+          </div>
+          <div class="survey-item">
+            <label for="dropdown">Which item did you buy?</label>
+            <select class="dropdown" name="dropdown" id="dropdown" >
+              <option value="null" selected disabled>Choose a product</option>
+              <option value="Lamptop">Lamptop</option>
+              <option value="Smartphone">Smartphone</option>
+              <option value="Car">A car I guess</option>
+              <option value="VR/AR">VR/AR</option>
+              <option value="Smartwatch">Smartwatch (For hardcore gamers)</option>
+              <option value="Smarthouse">Smarthouse (Not that smart but it's alright. It's trying its best)</option>
+            </select>
+          </div>
+          <div class="survey-item" id="radio-buttons">
+            <label for="score" id="score-label">How pleased were you with the product?</label>
+            <label for="completely-satisfied" class="radio-label">
+              <input id="completely-satisfied" type="radio" name="score" value="Completely Satisfied">Completely Satisfied
+            </label>
+            <label for="satisfied" class="radio-label">
+              <input id="satisfied" type="radio" name="score" value="Satisfied">Satisfied
+            </label>
+            <label for="indifferent" class="radio-label">
+              <input id="indifferent" type="radio" name="score" value="Indifferent">Indifferent
+            </label>
+            <label for="unsatisfied" class="radio-label">
+              <input id="unsatisfied" type="radio" name="score" value="Unsatisfied">Unsatisfied
+            </label>
+          </div>
+          <div class="survey-item" id="checkboxes">
+            <label for="extras">Which one of these items did you receive as extra?
+              (Check all that apply)</label>
+            <label for="charger" class="radio-label">
+              <input id="charger" type="checkbox" name="extras" value="Charger">Charger
+            </label>
+            <label for="headset" class="radio-label">
+              <input id="headset" type="checkbox" name="extras" value="Headset">Headset
+            </label>
+            <label for="memory" class="radio-label">
+              <input id="memory" type="checkbox" name="extras" value="Charger">Memory
+            </label>
+            <label for="donkey" class="radio-label">
+              <input id="donkey" type="checkbox" name="extras" value="Donkey">Donkey
+            </label>
+          </div>
+          <div class="survey-item" id="textitem">
+            <label for="comment">
+              Please enlighten us with your comments and suggestions
+            </label>
+            <textarea id="comment" name="comment" rows="8" cols="80" placeholder="Enter your comment here"></textarea>
+          </div>
+          <div class="survey-item">
+            <button type="submit" name="submit" submit>Submit</button>
+          </div>
+      </form>
     </main>
   </body>
 </html>
