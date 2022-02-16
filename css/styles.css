@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@100&family=Overpass:wght@100&family=Space+Mono&display=swap');
+
+body {
+  font-family: 'Space Mono', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-image: url("../img/background2.jpg") ;
+  background-repeat: no-repeat;
+  background-color: #ff7600;
+  background-blend-mode: luminosity;
+  background-size: cover;
+}
+
+header {
+  margin: 40px auto;
+  display: block;
+  width: 800px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 2%;
+  padding: 8px 0;
+  background-color: #703400;
+  opacity: 0.90;
+  color: white;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  display: block;
+  width: 800px;
+  height: auto;
+  min-height: 800px;
+  max-width: 100%;
+  border-radius: 2%;
+  padding: 8px 0;
+  background-color: #703400;
+  opacity: 0.90;
+}
